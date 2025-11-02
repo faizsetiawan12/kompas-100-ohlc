@@ -131,9 +131,6 @@ Thumbs.db
 
 # Large files that shouldn't be tracked by Git
 *.csv
-!data/
-!data/historical/
 
-# Data directories (except those specifically included)
-data/
-!data/historical/
+# But we want to track CSV files in the data/historical directory
+!data/historical/*.csv
